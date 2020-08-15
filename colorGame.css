@@ -1,0 +1,73 @@
+body{
+	background: #232323;
+	margin:0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.square{
+	background: purple;
+	width:30%;
+	padding-top: 30%;
+	margin:1.66%;
+	float:left;
+	border-radius: 15%;
+	transition: background 0.6s; /* this transition property may not work for all browsers so, we have to
+	add the following 2 properties*/
+	-webkit-transition: background 0.6s; /*for safari*/
+	-moz-transition: background 0.6s;/*for mozilla, on which firefox is built*/
+	
+}
+#container{
+	margin:20px auto; /* 20 px on top and bottom*/
+	max-width:500px;
+}
+
+h1{
+	text-align: center;
+	line-height: 1.1;
+	color:white;
+	background: steelblue;
+	margin:0; 
+	font-weight: normal;
+	text-transform: uppercase;
+	padding:20px 0;
+}
+
+button{
+	border: none;
+	background:none;
+	text-transform: uppercase;
+	height:100%; /* buttons take up the entire space of their container*/
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1 px;
+	font-size: inherit;
+	transition: all 0.4s; /*fade effect for the hover*/
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	outline:none;
+}
+button:hover{
+	color:white;
+	background-color: steelblue;
+}
+
+#colorDisplay{
+	font-size: 200%; /*200% of the h1 font size*/
+}
+
+#message{
+	display: inline-block;
+	width:20%; /*the span now takes up 20% of the white strip area*/
+}
+#stripe{
+	background: white;
+	height: 30px;
+	text-align: center;
+	color:black;
+}
+
+.selected{
+	color:white;
+	background-color: steelblue;
+}
